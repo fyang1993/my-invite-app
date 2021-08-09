@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-
-import App from './App';
-
+import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom";
+import "antd/dist/antd.css";
+import Router from "./router";
+window.React = React
 ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
-    document.querySelector('#root'),
-);
+  <BrowserRouter>
+      <Router />
+  </BrowserRouter>,
+  document.querySelector('#root'),
+   );
